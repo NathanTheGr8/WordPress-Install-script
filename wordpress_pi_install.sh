@@ -17,6 +17,8 @@ else
 	echo "A robot is now installing WordPress for you."
 	echo "============================================"
 
+	mkdir -p /var/www/html
+	cd /var/www/html
 
 	echo "run set Peril locales? (y/n)"
 	read -e runPeril
