@@ -63,7 +63,9 @@ EOF
 	echo "============================================"
 	echo "Installing WordPress for you."
 	echo "============================================"
-	# wget /var/www/html/latest.tar.gz https://wordpress.org/latest.tar.gz
+
+
+	sudo rm -f /var/www/html/index.html
 	sudo wget -O- https://wordpress.org/latest.tar.gz >/var/www/html/latest.tar.gz
 	sudo tar vxf /var/www/html/latest.tar.gz
 	sudo mv /var/www/html/wordpress/* /var/www/html
