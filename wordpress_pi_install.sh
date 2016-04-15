@@ -85,7 +85,7 @@ EOF
 
 	#create uploads folder and set permissions
 	sudo mkdir /var/www/html/wp-content/uploads
-	sudo chmod 775 /var/www/html/wp-content/uploads
+	sudo chmod 777 -R /var/www/html/
 	sudo chown -R pi: /var/www/html
 
 
